@@ -1,6 +1,6 @@
-//mean median and mode calculator using 4 values
-//if mean >=7, return "Pass", else if mean >=5"Fail"
-const divRoot = document.getElementById("root");
+//mean calculator using 4 values
+//if mean >=7, return "Pass", else if mean >=5"Summer Classes", else return "Fail!"
+
 //ENTRY
 const grade1 = Number(prompt("Inform grade1"));
 const grade2 = Number(prompt("Inform grade2"));
@@ -13,13 +13,11 @@ console.log(mean);
 
 let print = "";
 if (mean >= 7) {
-  print = "Passed Student! - Mean:"+ mean;
-}else if(mean >= 5);
-{
-  print = "Summer classes for Student :/ - Median:"+ mean;
-}
-else {
-    print = "Failed Student :( - Mode:"+ mean;
+  print = "Passed Student! ✅ - Mean:" + mean;
+} else if (mean >= 5) {
+  print = "Summer classes for Student 🌤️ - Mean:" + mean;
+} else {
+  print = "Failed Student ❌ - Mean:" + mean;
 }
 
 document.body.appendChild(document.createTextNode(print));
